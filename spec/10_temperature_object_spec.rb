@@ -96,6 +96,12 @@ describe Temperature do
   # run *all* the tests during your refactoring, to make sure you did it right
   #
   describe "utility class methods" do
+      it "converts from fahrenheit to celsius" do
+          expect(Temperature.ftoc(50)).to eq(10)
+      end
+      it "converts from celsisus to fahrenheit" do
+          expect(Temperature.ctof(100)).to eq(212)
+      end
   end
 
   # Here's another way to solve the problem!
